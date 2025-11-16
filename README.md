@@ -12,6 +12,32 @@ We present a novel implementation of Hamiltonian Monte Carlo (HMC) sampling with
 
 Keywords: Hamiltonian Monte Carlo, ΨQRH framework, dimensionality correction, physics-inspired sampling, energy conservation, automatic differentiation, multi-dimensional distributions, numerical stability, quaternion algebra, spectral regularization
 
+DOI
+---
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17171111.svg)](https://doi.org/10.5281/zenodo.17171111)
+
+If you use this code in your research, please cite it as:
+
+```
+@software{padilha_2025_17171111,
+  author       = {Klenio Araujo Padilha},
+  title        = {ΨQRH Hamiltonian Monte Carlo - Dimensionality Corrected Sampling},
+  month        = nov,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17171111},
+  url          = {https://doi.org/10.5281/zenodo.17171111}
+}
+```
+
+License
+-------
+
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for full license text.
+
+The GNU GPLv3 is a copyleft license that requires derivative works to also be licensed under GPLv3, ensuring the software remains free and open source.
+
 1. Introduction
 
 Hamiltonian Monte Carlo (HMC) is a powerful Markov Chain Monte Carlo (MCMC) method that leverages Hamiltonian dynamics to propose samples efficiently in high-dimensional spaces. However, traditional HMC implementations often struggle with dimensionality mismatches, numerical instabilities, and lack of automatic adaptation to different problem scales.
@@ -242,10 +268,6 @@ This image illustrates the Hamiltonian dynamics for a 1D potential (double well)
 This image displays the final sample distributions obtained from the HMC algorithm. The left subplot shows a 2D scatter plot of samples from the multimodal potential, colored by their Hamiltonian values (darker colors indicate lower energy regions). This demonstrates how HMC efficiently explores multiple modes of the distribution. The right subplot shows a 1D histogram of samples from the double well potential, illustrating the algorithm's ability to sample from symmetric, multimodal 1D distributions with proper weighting.
 
 These visualizations collectively demonstrate the ΨQRH-enhanced HMC's effectiveness in exploring complex, multi-dimensional probability distributions while maintaining physical energy conservation and high acceptance rates.
-
-7. License
-
-This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
 
 References
 
